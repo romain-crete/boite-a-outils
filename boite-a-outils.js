@@ -91,3 +91,49 @@ if (motDePasse.length <6 ){
 }else {
     console.log("Fort,votre mot de passe est d'une longeur suffisante")
 }
+
+
+// exo 1
+
+for (let i=1; i<=10;i++ ){
+    console.log(i);
+}
+
+for (let j=5 ; j<=15;j++){
+    console.log(j);}
+
+for (let i=10;i !=-1;i--){
+    if (i!=0){
+        console.log(i);
+    }else console.log("go!")
+}
+
+
+for (let i=1 ; i<=30;i++){
+  if (i%3===0)
+   {console.log("multiple de 3 :"+i);
+}}
+
+for (let i=1;i<=5;i++){
+    console.log(`Ligne ${i}`)
+}
+
+
+
+
+// exo 2
+let somme=0
+
+ for (let i=1;i<=100;i++){
+somme=somme+i;
+}
+console.log(somme)
+
+let compte=0;
+
+for (let i =1;i <=50;i++){
+    if (i%7===0){
+        compte += 1
+    }
+}
+console.log(compte)

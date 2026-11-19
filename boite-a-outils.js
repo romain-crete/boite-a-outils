@@ -9,7 +9,7 @@ const VERSION="1.0";
 const AUTEUR="Romain";
 const ANNEE=2026;
 
-let nombreFonctions = 3;
+let nombreFonctions = 6;
 
 
 console.log(`
@@ -56,3 +56,38 @@ let balance = `Votre IMC est de ${IMC} . Etes vous dans la plage normale ? => ${
 
 console.log(balance);
 
+
+
+
+// Bloc 1 — Vérifier si un nombre est pair ou impair :
+
+const nombreAVerifier = 7;
+
+let verification = nombreAVerifier%2===0 ? console.log ( `le nombre ${nombreAVerifier} est pair`) : console.log ( `le nombre ${nombreAVerifier} est impair`);
+
+
+// Bloc 2 — Catégoriser un âge :
+
+const agePersonne = 70;
+
+if ( agePersonne <= 11 ){
+    console.log("enfant");
+}else if (agePersonne<= 17 ){
+    console.log("adolescent");
+}else if (agePersonne<=64){
+    console.log("adulte");
+}else {
+    console.log("senior");
+}
+
+// Bloc 3 — Vérifier la force d'un mot de passe :
+
+const motDePasse = "azerty"
+
+if (motDePasse.length <6 ){
+    console.log("Faible , le mot de passe doit être plus long");
+}else if (motDePasse.length <=9){
+    console.log("Moyen, le mot de passe doit être plus long ");
+}else {
+    console.log("Fort,votre mot de passe est d'une longeur suffisante")
+}

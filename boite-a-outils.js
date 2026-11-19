@@ -4,9 +4,34 @@
 // ============================================
 
 
-console.log("=== Ma Boîte à Outils JavaScript ===");
-console.log("===================================");
-console.log("Bienvenue ! Cette boîte à outils contient des fonctions utiles.")
-console.log("Ouvrez la console pour les utiliser.")
+const NOM_OUTIL="Ma Boîte à Outils Javascript";
+const VERSION="1.0";
+const AUTEUR="Romain";
+const ANNEE=2026;
+
+let nombreFonctions = 0;
+
+console.log(NOM_OUTIL);
+console.log(VERSION);
+console.log(AUTEUR);
+console.log(ANNEE);
+console.log(nombreFonctions);
+
+
+
+
+
+
+console.log(`
+
+╔══════════════════════════════════════════╗
+║    ${NOM_OUTIL} ${VERSION}      ║
+║            Par ${AUTEUR} — ${ANNEE}             ║
+╠══════════════════════════════════════════╣
+║       Tapez aide() pour voir les         ║
+║        ${nombreFonctions} fonctions  disponibles          ║
+╚══════════════════════════════════════════╝
+
+`);
 
 

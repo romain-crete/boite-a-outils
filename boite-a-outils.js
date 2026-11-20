@@ -131,5 +131,45 @@ for (let i=1 ;i<=hauteur;i++){
 console.log("=======================")
 
 
+let i=0
+while (i<=10){
+    console.log(i);
+    i++
+}
+
+let nbrepair=0;
+let j=0;
+
+
+while (j<=20){
+   if(j%2===0){
+
+   console.log("test"+j)
+   }
+    j++;
+}
+
+
+// exo1---
+
+k=5;
+while (k !=0){
+    console.log(k);
+    k--;
+}
+
+
+let sommeNbre=0;
+let n =1
+while (n<=50){
+sommeNbre = sommeNbre+n;
+    n++;
+
+
+}
+
+
+
+    console.log("test"+sommeNbre);
 
 

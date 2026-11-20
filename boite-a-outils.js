@@ -172,4 +172,46 @@ sommeNbre = sommeNbre+n;
 
     console.log("test"+sommeNbre);
 
+// ---exo2
 
+let de = 0;
+let nbreLancers = 0;
+
+while (de!==6){
+    de = Math.floor(Math.random()*6)+1;
+    nbreLancers++;
+    console.log(`Lancer ${nbreLancers} : ${de}`);
+}
+
+let grdNbre =1000000;
+let compteur=0;
+while (grdNbre>1){
+    console.log("essai"+grdNbre);
+   grdNbre= grdNbre/2;
+   compteur++;
+}
+console.log(compteur)
+
+nmbreEtoile=5;
+
+for (i=0;i<=nmbreEtoile;i++){
+    ligne="";
+    for(j=0;j<=i;j++){
+        ligne+="*"
+    }
+    console.log(ligne)
+};
+
+
+// === 3. Triangle d'étoiles (boucle imbriquée) ===
+for (let ligne = 1; ligne <= 5; ligne++) {
+    let etoiles = "";        // On réinitialise la ligne à chaque tour
+    let col = 0;
+
+    while (col < ligne) {    // Boucle intérieure : ajoute autant de * que le n° de ligne
+        etoiles += "*";
+        col++;
+    }
+
+    console.log(etoiles);
+}

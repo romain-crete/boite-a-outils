@@ -9,7 +9,7 @@ const VERSION="1.0";
 const AUTEUR="Romain";
 const ANNEE=2026;
 
-let nombreFonctions = 6;
+let nombreFonctions = 9;
 
 
 console.log(`
@@ -93,47 +93,43 @@ if (motDePasse.length <6 ){
 }
 
 
-// exo 1
+// Programme 1 — Table de multiplication
 
-for (let i=1; i<=10;i++ ){
-    console.log(i);
+const nombreTable =8
+
+console.log(`========TABLE DE MULTIPLICATION DE ${nombreTable} ======`)
+
+for (let i=1;i<=9;i++){
+    console.log(`${nombreTable}x${i}=${nombreTable*i}`);
 }
 
-for (let j=5 ; j<=15;j++){
-    console.log(j);}
+console.log("=======================")
 
-for (let i=10;i !=-1;i--){
-    if (i!=0){
-        console.log(i);
-    }else console.log("go!")
-}
+// Programme 2 — Compter les voyelles
 
-
-for (let i=1 ; i<=30;i++){
-  if (i%3===0)
-   {console.log("multiple de 3 :"+i);
+const mot ="javascript"
+let nbreVoyelles=0
+for ( let i=0;i<mot.length;i++){
+if (mot[i]==="a"||mot[i]==="e"||mot[i]==="i"||mot[i]==="o"||mot[i]==="u"){
+nbreVoyelles++
 }}
+console.log(`Nombre de voyelles : ${nbreVoyelles}`)
 
-for (let i=1;i<=5;i++){
-    console.log(`Ligne ${i}`)
+console.log("=======================")
+
+// Programme 3 — Motif d'étoiles
+
+const hauteur=5;
+console.log("=== MOTIF D'ÉTOILES ===");
+for (let i=1 ;i<=hauteur;i++){
+    let etoile="";
+    for (let j=1;j<=i;j++){
+        etoile += "*"}
+        console.log(etoile);
 }
 
+console.log("=======================")
 
 
 
-// exo 2
-let somme=0
 
- for (let i=1;i<=100;i++){
-somme=somme+i;
-}
-console.log(somme)
-
-let compte=0;
-
-for (let i =1;i <=50;i++){
-    if (i%7===0){
-        compte += 1
-    }
-}
-console.log(compte)

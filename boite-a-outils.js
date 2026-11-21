@@ -92,12 +92,28 @@ if (motDePasse.length <6 ){
     console.log("Fort,votre mot de passe est d'une longeur suffisante")
 }
 
+console.log("============")
+
+
+
 
 // Programme 1 — Table de multiplication
 
+for (let i=1; i<=10;i++ ){
+    console.log(i);
+}
 const nombreTable =8
 
+for (let j=5 ; j<=15;j++){
+    console.log(j);}
 console.log(`========TABLE DE MULTIPLICATION DE ${nombreTable} ======`)
+
+for (let i=10;i !=-1;i--){
+    if (i!=0){
+        console.log(i);
+    }else console.log("go!");
+}
+
 
 for (let i=1;i<=9;i++){
     console.log(`${nombreTable}x${i}=${nombreTable*i}`);
@@ -107,6 +123,11 @@ console.log("=======================")
 
 // Programme 2 — Compter les voyelles
 
+for (let i=1 ; i<=30;i++){
+  if (i%3===0)
+   {console.log("multiple de 3 :"+i);}
+}
+
 const mot ="javascript"
 let nbreVoyelles=0
 for ( let i=0;i<mot.length;i++){
@@ -115,6 +136,9 @@ nbreVoyelles++
 }}
 console.log(`Nombre de voyelles : ${nbreVoyelles}`)
 
+for (let i=1;i<=5;i++){
+    console.log(`Ligne ${i}`)
+}
 console.log("=======================")
 
 // Programme 3 — Motif d'étoiles
@@ -131,87 +155,62 @@ for (let i=1 ;i<=hauteur;i++){
 console.log("=======================")
 
 
-let i=0
-while (i<=10){
-    console.log(i);
-    i++
+
+
+//============ programmes boucle while
+
+// Programme 1 — FizzBuzz (1 à 30)
+
+
+let nbreFizzBuzz = 1;
+
+while (nbreFizzBuzz <=30){
+    if (nbreFizzBuzz%3===0 && nbreFizzBuzz%5===0){
+        console.log("FizzBuZZ");
+    } else if ( nbreFizzBuzz%3===0){
+        console.log("Fizz");
+    }else if (nbreFizzBuzz%5===0){
+        console.log("Buzz");
+    }else console.log(nbreFizzBuzz)
+    nbreFizzBuzz++
 }
 
-let nbrepair=0;
-let j=0;
+console.log("============")
 
+// Programme 2 — Deviner un nombre (mini-jeu)
 
-while (j<=20){
-   if(j%2===0){
+let nbreSecret= Math.floor(Math.random()*50+1);
+let nbreTenatives=0;
+let nbreJoueur=0;
 
-   console.log("test"+j)
-   }
-    j++;
+while ( nbreSecret !== nbreJoueur){
+
+ nbreJoueur= Number(prompt("Choisissez un nombre entre 1 et 50"));
+    nbreTenatives++;
+
+    if (nbreJoueur>nbreSecret){
+        console.log("Trop Haut")
+    }else if (nbreJoueur<nbreSecret){
+        console.log("Trop bas")
+    }else  break
 }
+console.log(`Bravo vous avez trouvé en ${nbreTenatives} tentatives . `)
 
+// Programme 3 — Calculer une puissance sans **
 
-// exo1---
+let puissance10=1;
+let base2=2;
 
-k=5;
-while (k !=0){
-    console.log(k);
-    k--;
+while (puissance10 <10){
+    console.log(base2 = base2*2);
+    puissance10++
 }
+console.log("============")
 
+let puissance5=1;
+let base3=3;
 
-let sommeNbre=0;
-let n =1
-while (n<=50){
-sommeNbre = sommeNbre+n;
-    n++;
-
-
-}
-
-
-
-    console.log("test"+sommeNbre);
-
-// ---exo2
-
-let de = 0;
-let nbreLancers = 0;
-
-while (de!==6){
-    de = Math.floor(Math.random()*6)+1;
-    nbreLancers++;
-    console.log(`Lancer ${nbreLancers} : ${de}`);
-}
-
-let grdNbre =1000000;
-let compteur=0;
-while (grdNbre>1){
-    console.log("essai"+grdNbre);
-   grdNbre= grdNbre/2;
-   compteur++;
-}
-console.log(compteur)
-
-nmbreEtoile=5;
-
-for (i=0;i<=nmbreEtoile;i++){
-    ligne="";
-    for(j=0;j<=i;j++){
-        ligne+="*"
-    }
-    console.log(ligne)
-};
-
-
-// === 3. Triangle d'étoiles (boucle imbriquée) ===
-for (let ligne = 1; ligne <= 5; ligne++) {
-    let etoiles = "";        // On réinitialise la ligne à chaque tour
-    let col = 0;
-
-    while (col < ligne) {    // Boucle intérieure : ajoute autant de * que le n° de ligne
-        etoiles += "*";
-        col++;
-    }
-
-    console.log(etoiles);
+while (puissance5 <5){
+    console.log( base3 = base3*3);
+    puissance5++
 }
